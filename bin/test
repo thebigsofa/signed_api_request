@@ -1,0 +1,8 @@
+#!/bin/bash
+set -e
+cd `dirname $0`/..
+
+set -v
+eval 'bundle exec rake test'
+
+# 'test complete'
