@@ -1,4 +1,12 @@
+sudo: false
+
+branches:
+  only: master
+
 language: ruby
-rvm:
-  - 2.3.0
-before_install: gem install bundler -v 1.10.6
+
+cache: bundler
+
+script: ./bin/test
+
+before_install: gem install bundler -v 1.11.2
